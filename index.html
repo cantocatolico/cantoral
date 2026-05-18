@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice del Cancionero</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; padding: 20px; background-color: #f4f7f6; color: #333; }
+        .container { max-width: 900px; margin: auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        h1 { color: #2c3e50; margin-bottom: 10px; }
+        
+        /* Buscador */
+        .search-box { margin-bottom: 30px; text-align: center; }
+        #searchInput { 
+            width: 80%; padding: 12px 20px; border-radius: 25px; 
+            border: 1px solid #ddd; font-size: 1em; box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Secciones del índice */
+        .section-title { 
+            border-bottom: 2px solid #3498db; color: #3498db; 
+            padding-bottom: 5px; margin-top: 30px; font-size: 1.4em;
+        }
+
+        /* Lista de canciones */
+        .song-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 8px; margin-top: 8px; }
+        .song-item { 
+            background: white; padding: 8px; border-radius: 6px; 
+            text-decoration: none; color: #333; font-weight: 500;
+            display: flex; align-items: center; transition: all 0.2s;
+            border-left: 4px solid #3498db; box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .song-item:hover { 
+            background: #3498db; color: white; transform: translateY(-3px); 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .song-item span { margin-right: 10px; font-size: 0.9em; opacity: 0.7; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Cancionero Católico</h1>
+        <h3><i>Compilación realizada por Heriberto Álvarez Valderrama</i></h3>
+        <p>Selecciona un canto para ver su letra y acordes.</p>
+    </header>
+
+    <h2 class="section-title">Entrada</h2>
+    <div class="song-list">
+		<a href="01entrada/alegria_de_vivir.html" class="song-item">Alegría de vivir</a>
+	    <a href="01entrada/dios_trino.html" class="song-item">Dios Trino</a>
+	    <a href="01entrada/en_el_nombre_de_dios.html" class="song-item">En el nombre de Dios</a>		
+        <a href="01entrada/hacia_ti_morada_santa.html" class="song-item">Hacia ti, Morada Santa</a>
+        <a href="01entrada/hoy_llegamos_a_casa.html" class="song-item">Hoy llegamos a casa</a>
+		<a href="01entrada/iglesia_peregrina.html" class="song-item">Iglesia peregrina</a>
+		<a href="01entrada/juntos_cantando_la_alegria.html" class="song-item">Juntos cantando la alegría</a>
+		<a href="01entrada/somos_un_pueblo_que_camina.html" class="song-item">Somos un pueblo que camina</a>
+		<a href="01entrada/vamos_cantando_al_senor.html" class="song-item">Vamos cantando al Señor</a>
+		<a href="01entrada/vienen_con_alegria.html" class="song-item">Vienen con alegría</a>
+    </div>
+
+    <h2 class="section-title">Acto Penitencial</h2>
+    <div class="song-list">
+        <a href="02perdon/senor_ten_piedad_frausto.html" class="song-item">Señor ten piedad (G. Frausto)</a>
+		<a href="02perdon/senor_ten_piedad_hav.html" class="song-item">Señor ten piedad (H. Álvarez)</a>
+		<a href="02perdon/senor_ten_piedad_jesed.html" class="song-item">Señor ten piedad (Jeséd)</a>
+		<a href="02perdon/senor_ten_piedad_leiva.html" class="song-item">Señor ten piedad (F. Leiva)</a>
+		<a href="02perdon/senor_ten_piedad_taize.html" class="song-item">Señor ten piedad (Taizé)</a>
+    </div>
+
+    <h2 class="section-title">Gloria</h2>
+    <div class="song-list">
+        <a href="03gloria/gloria_hav.html" class="song-item">Gloria (H.A.V)</a>
+		<a href="03gloria/gloria_palazon.html" class="song-item">Gloria (Palazón)</a>
+    </div>
+
+    <h2 class="section-title">Salmos</h2>
+    <div class="song-list">
+        <a href="04salmos/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+
+    <h2 class="section-title">Aleluya y Aclamaciones</h2>
+    <div class="song-list">
+        <a href="05aclamaciones/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+
+    <h2 class="section-title">Presentación de las Ofrendas</h2>
+    <div class="song-list">
+        <a href="06ofertorio/te_presentamos_la_vida.html" class="song-item">Te presentamos la vida</a>
+    </div>
+
+    <h2 class="section-title">Santo</h2>
+    <div class="song-list">
+        <a href="07santo/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+
+    <h2 class="section-title">Padre Nuestro</h2>
+    <div class="song-list">
+        <a href="08padrenuestro/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+
+    <h2 class="section-title">Cordero de Dios</h2>
+    <div class="song-list">
+        <a href="09cordero/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+
+    <h2 class="section-title">Comunión</h2>
+    <div class="song-list">
+        <a href="10comunion/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+
+    <h2 class="section-title">Meditación y Adoración</h2>
+    <div class="song-list">
+        <a href="11meditacion/alma_de_cristo.html" class="song-item">Alma de Cristo</a>
+    </div>
+
+    <h2 class="section-title">Misión y Envío</h2>
+    <div class="song-list">
+        <a href="12envio/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+	
+	    <h2 class="section-title">Meditación y Adoración</h2>
+    <div class="song-list">
+        <a href="13meditacion/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+	
+	    <h2 class="section-title">Evangelización</h2>
+    <div class="song-list">
+        <a href="14evangelizacion/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+	
+	    <h2 class="section-title">María</h2>
+    <div class="song-list">
+        <a href="15maria/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+	
+	    <h2 class="section-title">Liturgias Especiales</h2>
+    <div class="song-list">
+        <a href="16especiales/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+
+    <h2 class="section-title">Himnos a Santos</h2>
+    <div class="song-list">
+        <a href="17himnosantos/san_sebastian.html" class="song-item">Himno a San Sebastián</a>
+    </div>
+	
+	    <h2 class="section-title">Adviento</h2>
+    <div class="song-list">
+        <a href="18adviento/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+	
+	    <h2 class="section-title">Navidad</h2>
+    <div class="song-list">
+        <a href="19navidad/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+	
+	    <h2 class="section-title">Cuaresma y Semana Santa</h2>
+    <div class="song-list">
+        <a href="20cuaresma/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+	
+	    <h2 class="section-title">Pascua</h2>
+    <div class="song-list">
+        <a href="21pascua/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+	
+	    <h2 class="section-title">Espíritu Santo y Pentecostés</h2>
+    <div class="song-list">
+        <a href="22pentecostes/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+
+    <h2 class="section-title">Varios</h2>
+    <div class="song-list">
+        <a href="23varios/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+
+    <h2 class="section-title">Animación</h2>
+    <div class="song-list">
+        <a href="24animacion/ejemplo.html" class="song-item">Ejemplo de canto</a>
+    </div>
+	
+</div>
+
+<script>
+    function filterSongs() {
+        let input = document.getElementById('searchInput').value.toLowerCase();
+        let items = document.getElementsByClassName('song-item');
+        
+        for (let i = 0; i < items.length; i++) {
+            let songTitle = items[i].innerText.toLowerCase();
+            if (songTitle.includes(input)) {
+                items[i].style.display = "";
+            } else {
+                items[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
