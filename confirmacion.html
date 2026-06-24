@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice del Cancionero</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; padding: 20px; background-color: #f4f7f6; color: #333; }
+        .container { max-width: 900px; margin: auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        h1 { color: #2c3e50; margin-bottom: 10px; }
+        
+        /* Buscador */
+        .search-box { margin-bottom: 30px; text-align: center; }
+        #searchInput { 
+            width: 80%; padding: 12px 20px; border-radius: 25px; 
+            border: 1px solid #ddd; font-size: 1em; box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Secciones del índice */
+        .section-title { 
+            border-bottom: 2px solid #3498db; color: #3498db; 
+            padding-bottom: 5px; margin-top: 30px; font-size: 1.4em;
+        }
+
+        /* Lista de canciones */
+        .song-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 8px; margin-top: 8px; }
+        .song-item { 
+            background: white; padding: 8px; border-radius: 6px; 
+            text-decoration: none; color: #333; font-weight: 500;
+            display: flex; align-items: center; transition: all 0.2s;
+            border-left: 4px solid #3498db; box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .song-item:hover { 
+            background: #3498db; color: white; transform: translateY(-3px); 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .song-item span { margin-right: 10px; font-size: 0.9em; opacity: 0.7; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Cantos Confirmación</h1>
+        <h3><i>Compilación realizada por Heriberto Álvarez Valderrama</i></h3>
+        <p>Selecciona un canto para ver su letra y acordes.</p>
+    </header>
+
+    <h2 class="section-title">Entrada</h2>
+    <div class="song-list">
+		<a href="22pentecostes/ven_espiritu_de_santidad.html" class="song-item">Ven Espíritu de Santidad</a>
+    </div>
+
+    <h2 class="section-title">Acto Penitencial</h2>
+    <div class="song-list">
+		<a href="02perdon/senor_ten_piedad_leiva.html" class="song-item">Señor ten piedad (F. Leiva)</a>
+    </div>
+
+    <h2 class="section-title">Gloria</h2>
+    <div class="song-list">
+        <a href="03gloria/gloria_hav.html" class="song-item">Gloria (H.Álvarez)</a>
+    </div>
+
+    <h2 class="section-title">Salmo</h2>
+    <div class="song-list">
+        <a href="04salmos/ejemplo.html" class="song-item">Envía tu Espíritu Santo (103)</a>
+    </div>
+
+    <h2 class="section-title">Aleluya y Aclamaciones</h2>
+    <div class="song-list">
+        <a href="05aclamaciones/aleluya_fones.html" class="song-item">Aleluya (C. Fones)</a>
+		<a href="22pentecostes/divino_espiritu_bajad.html" class="song-item">Divino Espíritu bajad</a>
+    </div>
+
+	    <h2 class="section-title">Espíritu Santo</h2>
+    <div class="song-list">
+		<a href="22pentecostes/ven_espiritu_de_dios_kairoi.html" class="song-item">Ven Espíritu de Dios (Kairoi)</a>
+		<a href="22pentecostes/ven_espiritu_de_dios_maranatha.html" class="song-item">Ven Espíritu de Dios (Maranatha)</a>
+		<a href="22pentecostes/ven_espiritu_santo_fones.html" class="song-item">Ven Espíritu Santo (C. Fones)</a>
+    </div>
+
+    <h2 class="section-title">Presentación de las Ofrendas</h2>
+    <div class="song-list">
+        <a href="06ofertorio/tomad_senor_y_recibid.html" class="song-item">Tomad Señor y Recibid</a>
+    </div>
+
+    <h2 class="section-title">Santo</h2>
+    <div class="song-list">
+        <a href="07santo/santo_fones.html" class="song-item">Santo (C. Fones)</a>
+    </div>
+
+    <h2 class="section-title">Cordero de Dios</h2>
+    <div class="song-list">
+        <a href="09cordero/cordero1.html" class="song-item">Cordero de Dios</a>
+    </div>
+
+    <h2 class="section-title">Comunión y Meditación</h2>
+    <div class="song-list">
+        <a href="11meditacion/recibeme.html" class="song-item">Recíbeme</a>
+		<a href="11meditacion/sagrado_corazon.html" class="song-item">Sagrado Corazón</a>
+		<a href="01entrada/jesus_esta_entre_nosotros.html" class="song-item">Jesús está entre nosotros</a>
+		<a href="11meditacion/alma_de_cristo.html" class="song-item">Alma de Cristo</a>
+    </div>
+	
+	    <h2 class="section-title">Final (María)</h2>
+    <div class="song-list">
+        <a href="15maria/arcilla_entre_sus_manos.html" class="song-item">Arcilla entre sus manos</a>
+    </div>
+	
+</div>
+
+<script>
+    function filterSongs() {
+        let input = document.getElementById('searchInput').value.toLowerCase();
+        let items = document.getElementsByClassName('song-item');
+        
+        for (let i = 0; i < items.length; i++) {
+            let songTitle = items[i].innerText.toLowerCase();
+            if (songTitle.includes(input)) {
+                items[i].style.display = "";
+            } else {
+                items[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
